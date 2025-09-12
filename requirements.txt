@@ -1,3 +1,2 @@
-python-telegram-bot[ext]==20.10
-
+python-telegram-bot==20.10
 python-dotenv==1.0.0
