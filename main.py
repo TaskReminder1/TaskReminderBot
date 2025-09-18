@@ -349,7 +349,8 @@ def main():
     job_queue.run_repeating(check_reminders, interval=10, first=5)
 
     print("🚀 Бот запущен... (напоминания проверяются каждые 10 секунд)")
-    app.run_polling()
+    app.run_polling(port=8000)
 
 if __name__ == '__main__':
+
     main()
