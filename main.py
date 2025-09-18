@@ -14,8 +14,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Твой токен из BotFather — ВСТАВЬ СЮДА!
-BOT_TOKEN = "8480651836:AAHGDJ..."  # ← ЗАМЕНИ ЭТО НА СВОЙ ТОКЕН!
+BOT_TOKEN = "8480651836:AAHGDJ84Yn3jMzbQJZ6cqx6leIVO-uqSZV4"  
 
 # =====================
 # ОБРАБОТЧИКИ КНОПОК
@@ -349,8 +348,9 @@ def main():
     job_queue.run_repeating(check_reminders, interval=10, first=5)
 
     print("🚀 Бот запущен... (напоминания проверяются каждые 10 секунд)")
-    app.run_polling(port=8000)
+    app.run_polling()
 
 if __name__ == '__main__':
 
     main()
+
